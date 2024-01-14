@@ -165,7 +165,7 @@
                   props.row.cookie.substring(0, 5) + "......"
                 }}</span>
             </el-form-item>
-            <el-form-item label="pulsh推送token">
+            <el-form-item label="push推送token">
               <span v-if="props.row.pushPlusToken">{{
                   props.row.pushPlusToken.substring(0, 5) + "......"
                 }}</span>
@@ -184,9 +184,6 @@
             </el-form-item>
             <el-form-item label="纬度">
               <span>{{ props.row.lat }}</span>
-            </el-form-item>
-            <el-form-item label="经度">
-              <span>{{ props.row.lng }}</span>
             </el-form-item>
             <el-form-item label="经度">
               <span>{{ props.row.lng }}</span>
@@ -316,8 +313,8 @@
           </el-col>
         </el-row>
 
-        <el-form-item label="toekn" prop="token">
-          <el-input v-model="form.token" placeholder="请输入I茅台toekn"/>
+        <el-form-item label="token" prop="token">
+          <el-input v-model="form.token" placeholder="请输入I茅台token"/>
         </el-form-item>
         <el-form-item label="cookie" prop="cookie">
           <el-input v-model="form.cookie" placeholder="请输入I茅台cookie"/>
@@ -595,6 +592,10 @@ export default {
       //0:新增，1:修改
       toAdd: 0,
       typeOptions: [
+        {
+          value: 0,
+          label: "预约你的位置(经纬度)附近门店",
+        },
         {
           value: 1,
           label: "预约本市出货量最大的门店",

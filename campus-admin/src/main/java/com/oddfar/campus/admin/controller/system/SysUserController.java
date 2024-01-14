@@ -146,7 +146,7 @@ public class SysUserController {
     @PutMapping("/resetPwd")
     public R resetPwd(@RequestBody SysUserEntity user) {
 
-        userService.checkUserAllowed(user);
+//        userService.checkUserAllowed(user);
         user.setPassword(SecurityUtils.encryptPassword(user.getPassword()));
         return R.ok(userService.resetPwd(user));
     }
