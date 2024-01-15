@@ -24,10 +24,10 @@
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
-      <!-- <el-form-item label="商品预约code，用@间隔" prop="itemCode">
+      <!-- <el-form-item label="预约商品id，用@间隔" prop="itemCode">
         <el-input
           v-model="queryParams.itemCode"
-          placeholder="请输入商品预约code，用@间隔"
+          placeholder="请输入预约商品id，用@间隔"
           clearable
           @keyup.enter.native="handleQuery"
         />
@@ -173,7 +173,7 @@
             <el-form-item label="设备id">
               <span>{{ props.row.deviceId }}</span>
             </el-form-item>
-            <el-form-item label="预约项目code">
+            <el-form-item label="预约商品id">
               <span>{{ props.row.itemCode }}</span>
             </el-form-item>
             <el-form-item label="省份">
@@ -210,7 +210,7 @@
       <el-table-column type="selection" width="55" align="center"/>
       <el-table-column label="手机号" align="center" prop="mobile"/>
       <el-table-column label="备注" align="center" prop="remark"/>
-      <el-table-column label="预约项目code" align="center" prop="itemCode"/>
+      <el-table-column label="预约商品id" align="center" prop="itemCode"/>
       <el-table-column label="省份" align="center" prop="provinceName"/>
       <el-table-column
         label="类型"
@@ -324,10 +324,10 @@
         </el-form-item>
         <el-row>
           <el-col :span="12">
-            <el-form-item label="预约code" prop="itemCode">
+            <el-form-item label="预约商品id" prop="itemCode">
               <!-- <el-input
                 v-model="form.itemCode"
-                placeholder="请输入商品预约code，用@间隔"
+                placeholder="请输入预约商品id，用@间隔"
               /> -->
               <el-select
                 v-model="itemSelect"
@@ -418,8 +418,8 @@
         </el-row> -->
         <el-row>
           <el-col :span="12">
-            <el-form-item label="门店商品ID" prop="ishopId">
-              <el-input v-model="form.ishopId" placeholder="请输入门店商品ID"/>
+            <el-form-item label="门店id" prop="ishopId">
+              <el-input v-model="form.ishopId" placeholder="请输入门店id"/>
             </el-form-item>
           </el-col>
           <el-col :span="12">

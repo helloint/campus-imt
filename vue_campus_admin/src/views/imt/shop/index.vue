@@ -8,10 +8,10 @@
       v-show="showSearch"
       label-width="68px"
     >
-      <el-form-item label="商品ID" prop="iShopId">
+      <el-form-item label="门店id" prop="iShopId">
         <el-input
           v-model="queryParams.iShopId"
-          placeholder="请输入商品ID"
+          placeholder="请输入门店id"
           clearable
           @keyup.enter.native="handleQuery"
         />
@@ -117,7 +117,7 @@
     >
       <!-- <el-table-column type="selection" width="55" align="center" /> -->
       <!-- <el-table-column label="ID" align="center" prop="shopId" /> -->
-      <el-table-column label="商品ID" align="center" prop="ishopId" />
+      <el-table-column label="门店id" align="center" prop="ishopId" />
       <el-table-column label="省份" align="center" prop="provinceName" />
       <el-table-column label="城市" align="center" prop="cityName" />
       <el-table-column label="地区" align="center" prop="districtName" />

@@ -20,7 +20,7 @@
 
     <el-table v-loading="loading" :data="itemList">
       <!-- <el-table-column label="id" align="center" prop="itemId" /> -->
-      <el-table-column label="预约商品code" align="center" prop="itemCode" />
+      <el-table-column label="预约商品id" align="center" prop="itemCode" />
       <el-table-column label="标题" align="center" prop="title" />
       <el-table-column
         label="内容"
