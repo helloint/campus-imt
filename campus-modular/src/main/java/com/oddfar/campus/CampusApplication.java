@@ -11,7 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CampusApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CampusApplication.class, args);
+        SpringApplication app = new SpringApplication(CampusApplication.class);
+        app.setLazyInitialization(true);
+        app.run(args);
     }
 
 }
