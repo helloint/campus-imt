@@ -219,7 +219,7 @@ public class IMTServiceImpl implements IMTService {
                 String logContent = "";
                 //sleep 10秒
                 try {
-                    Thread.sleep(20000);
+                    Thread.sleep(10000);
                     //预约后领取耐力值
                     String energyAward = getEnergyAward(iUser);
                     logContent += "[申购耐力值]:" + energyAward;
